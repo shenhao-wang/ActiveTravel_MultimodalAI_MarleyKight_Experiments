@@ -1,0 +1,22 @@
+dimension,feature,RF_Full,RF_NoTravel,GB_Full,GB_NoTravel
+D1,density_permissions (LLM),-0.053 (0.054)nan,-0.046 (0.062)nan,-0.010 (0.046)nan,-0.079 (0.055)
+D1,"min_lot_area (scraped, inv.)",-0.040 (0.028)nan,-0.029 (0.036)nan,+0.001 (0.016)nan,-0.009 (0.027)
+D1,max_height (scraped),-0.031 (0.018)nan,-0.049 (0.022)nan,-0.015 (0.018)nan,-0.009 (0.024)
+D2,use_mixing (LLM),+0.038 (0.048)nan,-0.004 (0.065)nan,+0.015 (0.039)nan,-0.037 (0.048)
+D2,use_flexibility (LLM),+0.039 (0.042)nan,+0.055 (0.057)nan,+0.057 (0.020)*,+0.045 (0.025)
+D4,"parking_intensity (LLM, inv.)",+0.098 (0.048)nan,+0.052 (0.065)nan,+0.005 (0.032)nan,+0.076 (0.048)
+D4,reduced_parking (binary),+0.041 (0.034)nan,+0.031 (0.040)nan,-0.013 (0.024)nan,+0.003 (0.023)
+D3,ped_street_interface (LLM),-0.166 (0.073)nan,-0.119 (0.087)nan,+0.007 (0.042)nan,+0.023 (0.046)
+D3,"front_setback (scraped, inv.)",-0.020 (0.060)nan,-0.025 (0.068)nan,+0.027 (0.028)nan,+0.065 (0.028)†
+D3,"lot_width (scraped, inv.)",+0.025 (0.017)nan,+0.012 (0.019)nan,+0.008 (0.015)nan,+0.035 (0.024)
+D3,frontage_std (binary),+0.077 (0.034)nan,+0.119 (0.045)†,+0.040 (0.017)†,+0.045 (0.032)
+D3,transparency_activation (LLM),-0.116 (0.054)nan,-0.170 (0.080)nan,+0.024 (0.037)nan,+0.080 (0.051)
+D5,setback_building_placement (LLM),-0.057 (0.051)nan,-0.051 (0.063)nan,+0.009 (0.036)nan,+0.042 (0.048)
+D5,"side_setback (scraped, inv.)",-0.055 (0.037)nan,-0.006 (0.043)nan,-0.011 (0.019)nan,-0.006 (0.026)
+D5,"rear_setback (scraped, inv.)",+0.040 (0.028)nan,+0.062 (0.036)nan,+0.004 (0.018)nan,-0.012 (0.025)
+D6,form_based_design (LLM),-0.059 (0.104)nan,+0.022 (0.123)nan,-0.136 (0.050)*,-0.087 (0.053)
+D6,human_scale_design (binary),-0.062 (0.040)nan,-0.027 (0.059)nan,-0.083 (0.025)*,-0.091 (0.025)**
+D6,ped_scale_lang (binary),-0.080 (0.063)nan,-0.021 (0.066)nan,+0.006 (0.039)nan,+0.023 (0.059)
+D7,transit_orientation (LLM),+0.281 (0.076)**,+0.273 (0.088)*,+0.142 (0.060)†,+0.270 (0.076)**
+D7,transit_orient (binary),-0.031 (0.031)nan,-0.002 (0.037)nan,+0.037 (0.019)nan,+0.082 (0.018)***
+D8,open_space_green (LLM),+0.005 (0.033)nan,+0.060 (0.040)nan,-0.093 (0.036)†,-0.103 (0.038)*

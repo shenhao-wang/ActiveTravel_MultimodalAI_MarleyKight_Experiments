@@ -1,0 +1,38 @@
+Variable,Display,Category,LR_Estimate,LR_SE,LR_p,LR_sig,RF_Estimate,RF_SE,RF_p,RF_sig
+age,Age,Sociodemographics,-0.309471,0.053967,0.0,***,-0.007733,0.002089,0.000214,***
+gender,Gender,Sociodemographics,0.234854,0.04102,0.0,***,-0.0,0.0,0.802401,
+education,Education (1–5),Sociodemographics,-0.237892,0.053592,9e-06,***,0.003422,0.004573,0.454304,
+income_detailed,HH income (1–8),Sociodemographics,0.162366,0.055506,0.003443,**,-0.000548,0.001519,0.718314,
+num_veh,Vehicle ownership,Sociodemographics,-0.029601,0.04728,0.531255,,1e-06,1e-06,0.288033,
+hhsize,Household size,Sociodemographics,-0.258856,0.048343,0.0,***,-0.006973,0.001875,0.0002,***
+trip_distance,Trip distance (mi),Travel Attributes,-5.950756,0.422049,0.0,***,-0.301289,0.007632,0.0,***
+trip_duration,Trip duration (min),Travel Attributes,0.4355,0.114357,0.00014,***,0.017047,0.008173,0.037011,*
+d_purpose_category_imputed,Destination purpose (categorical),Travel Attributes,0.067684,0.042034,0.107351,,0.013836,0.002961,3e-06,***
+median_hh_income,Median HH income (BG),ACS Block Group,0.144594,0.08815,0.100938,,-0.00118,0.001572,0.452738,
+pct_bachelors_plus,Pct. bachelor's+ (BG),ACS Block Group,-0.023809,0.136978,0.862009,,0.001725,0.001338,0.19729,
+pct_white_nonhisp,Pct. white non-Hispanic (BG),ACS Block Group,0.073629,0.28501,0.796145,,0.008358,0.002227,0.000175,***
+pct_black_nonhisp,Pct. Black non-Hispanic (BG),ACS Block Group,-0.10872,0.20854,0.602132,,-0.007368,0.002125,0.000525,***
+pct_hispanic,Pct. Hispanic (BG),ACS Block Group,0.138467,0.199054,0.486664,,-0.003149,0.001859,0.090249,†
+pct_poverty,Pct. poverty (BG),ACS Block Group,-0.10865,0.059307,0.066951,†,-0.011125,0.002552,1.3e-05,***
+pct_owner_occ,Pct. owner-occupied (BG),ACS Block Group,-0.455114,0.094559,1e-06,***,-0.00762,0.001759,1.5e-05,***
+density_permissions,Density permissions (0–10),D1: Density,-0.395929,0.701754,0.572618,,0.010143,0.004876,0.037516,*
+min_lot_area,"Min. lot area, sq ft (inv.)",D1: Density,-0.995438,0.310301,0.001337,**,-0.00424,0.001626,0.009115,**
+max_height,"Max. height, ft",D1: Density,-0.19126,0.106233,0.071799,†,-0.009863,0.003299,0.002794,**
+use_mixing,Use mixing (0–10),D2: Use Mix & Flexibility,-0.275484,0.61446,0.653911,,0.004612,0.002522,0.067457,†
+use_flexibility,Use flexibility (0–10),D2: Use Mix & Flexibility,-0.239607,0.412623,0.561447,,0.005176,0.001405,0.00023,***
+parking_intensity,"Parking intensity (0–10, inv.)",D3: Parking,-1.697754,0.577217,0.003269,**,0.014393,0.002683,0.0,***
+reduced_parking,Reduced parking (binary),D3: Parking,0.207657,0.348057,0.550762,,-0.003738,0.002404,0.120053,
+ped_street_interface,Ped. street interface (0–10),D4: Pedestrian Design,-1.890059,1.66493,0.256284,,0.00206,0.002303,0.371005,
+front_setback,"Front setback, ft (inv.)",D4: Pedestrian Design,-0.382675,0.503092,0.446868,,-0.002646,0.002238,0.237171,
+lot_width,"Lot width, ft (inv.)",D4: Pedestrian Design,0.895976,0.276555,0.001196,**,-0.000455,0.001054,0.665975,
+frontage_std,Frontage standard (binary),D4: Pedestrian Design,0.300417,0.265255,0.2574,,0.001788,0.002633,0.497086,
+transparency_activation,Transparency & activation (0–10),D4: Pedestrian Design,0.285542,0.777743,0.713513,,0.006383,0.002807,0.022953,*
+setback_building_placement,Setback/bldg. placement (0–10),D5: Building Placement,1.641516,1.063099,0.122568,,0.001515,0.002441,0.534734,
+side_setback,"Side setback, ft (inv.)",D5: Building Placement,0.724027,0.399958,0.070256,†,-0.001627,0.002024,0.421432,
+rear_setback,"Rear setback, ft (inv.)",D5: Building Placement,0.049551,0.181063,0.784339,,0.005908,0.002709,0.029159,*
+form_based_design,Form-based design (0–10),D6: Regulatory Mode,-0.202933,0.835304,0.808048,,-0.003237,0.002383,0.174325,
+human_scale_design,Human-scale design (binary),D6: Regulatory Mode,-0.48772,0.289834,0.092422,†,-0.001183,0.002169,0.585467,
+ped_scale_lang,Ped.-scale language (binary),D6: Regulatory Mode,-0.16644,0.483377,0.7306,,0.006376,0.00271,0.018654,*
+transit_orientation,Transit orientation (0–10),D7: Transit Orientation,2.34721,1.094496,0.031988,*,0.024466,0.003595,0.0,***
+transit_orient,Transit-oriented (binary),D7: Transit Orientation,-0.807029,0.585078,0.167786,,0.005839,0.002169,0.007089,**
+open_space_green,Open space & green (0–10),D+: Open Space,1.032637,0.531427,0.051999,†,0.008313,0.001894,1.1e-05,***
