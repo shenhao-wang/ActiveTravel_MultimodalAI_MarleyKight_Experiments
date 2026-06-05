@@ -40,18 +40,18 @@ definitions of every CSV.
 
 ## Key methods
 
-1. **Text embeddings** -- Zoning district corpora are embedded with six models
+1. **Text embeddings:** Zoning district corpora are embedded with six models
    (MiniLM, MPNet, multi-qa, OpenAI text-embedding-3-large, Google
    text-embedding-004, and a hybrid LLM+MiniLM variant) plus TF-IDF. Embeddings
    are reduced to 32 dimensions via PCA.
 
-2. **LLM feature scoring** -- GPT-4o rates each district on 10 theory-driven
+2. **LLM feature scoring:** GPT-4o rates each district on 10 theory-driven
    dimensions (use mixing, density permissions, pedestrian street interface,
    parking intensity, form-based design, use flexibility, transit orientation,
    open space, setback/building placement, transparency/activation) on a 1--5
    scale with rationales.
 
-3. **Double Machine Learning** -- Partially linear DML isolates the causal
+3. **Double Machine Learning:** Partially linear DML isolates the causal
    effect of zoning text (via embeddings or LLM scores) on active travel rates,
    controlling for ACS sociodemographics. Multiple estimands:
    - Estimand B: embedding dimension -> AT rate
@@ -59,7 +59,7 @@ definitions of every CSV.
    - Theory-driven: named planning dimensions -> AT rate (with ACS, travel,
      vehicle ownership, and joint specifications)
 
-4. **Counterfactuals** -- A local LLM (Mistral-7B) rewrites zoning text under
+4. **Counterfactuals:** A local LLM (Mistral-7B) rewrites zoning text under
    "standard" and "aggressive" pedestrian-friendly scenarios. Rewritten text is
    re-embedded and scored through the DML model to estimate predicted AT changes.
 
